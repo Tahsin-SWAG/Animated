@@ -14,8 +14,8 @@ export default function Awesome(){
                            <img src={item.image} style={{ width:'100%'}}/>
                             </Box>
                             <Typography variant='h4' sx={{display:'flex' , justifyContent:'center'}}>{item.title}</Typography>
-                            <Typography variant='body1' sx={{display:'flex' , justifyContent:'center' , color:'grey' , marginTop:'2%'}}>{item.description}</Typography>
-                            <Button sx={{display:'block' , ':hover':{backgroundColor:'#68b8f7'} ,backgroundColor:'#68b8f7' ,marginLeft:'auto' , marginRight:'auto' , width: '25%', color: 'white',  fontWeight: 'bold',  marginTop: '3%',  padding: '14px',  borderRadius: '20px'}}>{item.button}</Button>
+                            <Typography  sx={{display:'flex' , justifyContent:'center' , color:'grey' , marginTop:'2%'}}>{item.description}</Typography>
+                            <Button sx={{display:'block' , ':hover':{backgroundColor:'#68b8f7'} ,backgroundColor:'#68b8f7' ,marginLeft:'auto' , marginRight:'auto' , width:'10rem', color: 'white',  fontWeight: 'bold',  marginTop: '4%',  padding: '14px',  borderRadius: '20px'}}>{item.button}</Button>
                             </Box>
                       ))}   
                      </Box>

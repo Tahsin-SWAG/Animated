@@ -7,22 +7,41 @@ import { useState , useEffect} from "react"
 
 export default function App() {
 
-  const [popup , setPopup] = useState(false)
+  const [popup_1 , setPopup_1] = useState(true)
+  const [popup_2 , setPopup_2] = useState(false)
+  const [popup_3 , setPopup_3] = useState(true)
+  const [popup_4 , setPopup_4] = useState(false)
+  const [popup_5 , setPopup_5] = useState(true)
 
   useEffect(() => {
     setTimeout(() => {
-      setPopup((prev) => !prev)
-    }, 10000);
-  }, [popup])
+      setPopup_1((prev) => !prev)
+      setPopup_2((prev) => !prev)
+      setPopup_3((prev) => !prev)
+      setPopup_4((prev) => !prev)
+      setPopup_5((prev) => !prev)
+    }, 10000)
+  } , [])
+
 
 
     return(
-      <div style={{display:popup === false ? 'none' : 'block'}}>
+      <div>
+        <div style={{display:popup_1 === false ? 'none' : 'block'}}>
         <Clock/>
-        <Awesome/>
-        <Slide/>
+        </div>
+        <div style={{display:popup_2 === false ? 'none' : 'block'}}>
+      <Awesome/>
+      </div>
+      <div style={{display:popup_3 === false ? 'none' : 'block'}}>
+      <Slide/>
+      </div>
+      <div style={{display:popup_4 === false ? 'none' : 'block'}}>
         <Social/>
+        </div>
+        <div style={{display:popup_5 === false ? 'none' : 'block'}}>
         <Stay/>
+        </div>
       </div>
     )
 }

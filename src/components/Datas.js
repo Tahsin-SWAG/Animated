@@ -3,6 +3,10 @@ import  Time_Clock  from  '../assets/byzbyz_com_free_icon_watch.svg';
 import  Crown from  '../assets/byzbyz_com_free_icon_crown.svg';
 import Frame from '../assets/byzbyz_com_free_icon_frame.svg';
 import Inbox from '../assets/byzbyz_com_free_icon_send.svg';
+import Calender from '../assets/byzbyz_com_free_icon_calender.svg';
+import Gallary from '../assets/byzbyz_com_free_icon_gallary.svg';
+import Light from '../assets/byzbyz_com_free_icon_light.svg';
+
 
 const Clocks = [
     {
@@ -34,9 +38,19 @@ const Swipe = [
         "image":Frame
     }
 ]
+const Swipe_icons = [
+    {
+        "icon":Gallary
+    },{
+        "icon":Calender
+    },{
+        "icon":Light
+    }
+]
 
 
-const Reacts = [
+
+const React_list = [
     {
         "list_title":'Export in all formats :',
         "list_description":"AMP , HTML OR ANIMATION GIF "
@@ -57,10 +71,11 @@ const Reacts = [
     }
     ,
     {
-        "list_title":"Magic animate",
+        "list_title":"Magic animate :",
         "list_description":"Full control over animation"
     }
 ]
+
 const Send = [
     {
        "title":"Send your message",
@@ -69,4 +84,4 @@ const Send = [
     }
 ]
 
-export {Clocks , Awesomes , Swipe , Reacts , Send}
+export {Clocks , Awesomes , Swipe , Send, Swipe_icons , React_list}
