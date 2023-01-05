@@ -21,7 +21,7 @@ export default function App() {
       setPopup_4((prev) => !prev)
       setPopup_5((prev) => !prev)
     }, 10000)
-  } , [])
+  } , [popup_1])
 
 
 
