@@ -254,11 +254,15 @@ export default function Slide() {
         open={open}
         onClose={handleClose}
       >  
+        <DialogActions>
+        <Button onClick={handleClose} sx={{marginLeft:'auto'}}>X</Button>
+        </DialogActions>
         <DialogContent sx={{overflow:'hidden'}}>
         {Swipe.map((item) => (
-          <Slider {...settings} style={{width:'95%' , marginLeft:'auto' , marginRight:'auto' }}>
+          <Slider {...settings} style={{width:'95%' , marginLeft:'auto' , marginRight:'auto' , marginTop:'-10%'}}>
             <div>
               <Box>
+          
                 <Box
                   sx={{display:'flex' , justifyContent:'center' , marginTop:'5%' , width:'20%' , marginLeft:'auto' , marginRight:'auto'}}
                 >
@@ -273,7 +277,6 @@ export default function Slide() {
                       }}    />    
                       
                       ))}
-
                 </Box>
                 <Box>
                   <Typography
@@ -313,8 +316,7 @@ export default function Slide() {
                         borderRadius: "100px",
                       }}    />    
                       
-                      ))}
-                    
+                      ))}                  
                 </Box>
                 <Box>
                   <Typography
@@ -335,8 +337,7 @@ export default function Slide() {
                     }}
                   >
                     {item.description}
-                  </Typography>
-                 
+                  </Typography>       
                 </Box>
               </Box>
             </div>
@@ -344,8 +345,7 @@ export default function Slide() {
               <Box>
               <Box
                   sx={{display:'flex' , justifyContent:'center' , marginTop:'5%' , width:'20%' , marginLeft:'auto' , marginRight:'auto'}}
-                >
-                 
+                >      
                   {Swipe_icons.map((item) => (      
                     <img
                       src={item.icon}
@@ -385,9 +385,6 @@ export default function Slide() {
           </Slider>
         ))}
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} sx={{marginTop:'-75%'}}>Close</Button>
-        </DialogActions>
       </Dialog>
     </Box>
   );
