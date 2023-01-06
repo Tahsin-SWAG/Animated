@@ -50,7 +50,7 @@ export default function Clock() {
                                 </Card>
                 ))}
                         </Box> 
-        <Button variant="contained" onClick={handleClickOpen} sx={{marginLeft:'auto' , marginRight:'auto' , display:'block'}}>
+        <Button variant="contained" onClick={handleClickOpen} sx={{marginLeft:'auto' , marginRight:'auto' , display:'block' , marginTop:'2%'}}>
         Open popup
       </Button>
          <Dialog
@@ -63,7 +63,7 @@ export default function Clock() {
         <DialogTitle>{"Use Google's location service?"}</DialogTitle>
         <DialogContent>
         {Clocks.map((item) => (         
-                                <Card sx={{width:345 , marginTop:'2%'}}>
+                                <Card sx={{width:'100%' , marginTop:'2%'}}>
                                     <CardActionArea>
                                         <CardMedia
                                         component="img"

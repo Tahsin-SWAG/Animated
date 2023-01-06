@@ -123,64 +123,6 @@ export default function Slide() {
                   </Button>
                 </Box>
               </Box>
-      <Button variant="contained" onClick={handleClickOpen} sx={{marginLeft:'auto' , marginRight:'auto' ,display:'block' , marginTop:'2%'}}>
-        Slide in alert dialog
-      </Button>
-      <Dialog
-        open={open}
-        keepMounted
-        onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description"
-      >
-      
-        <DialogContent>
-        <Box  sx={{ width: { xs: "95%", md: "80%" }}}>
-                <Box
-                  sx={{       
-                    display: "flex",       
-                  }}
-                >
-                  {Swipe_icons.map((item) => (
-                    <Box sx={{marginLeft:'15%'}}>
-                      <img
-                      src={item.icon}
-                      style={{
-                        width: "90%",
-                        margin: "20%",
-                        borderRadius: "100px",
-                      }}
-                    />
-                     </Box>
-                  ))}
-                </Box>
-                <Box>
-                  <Typography
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      color: "#99afde",
-                    }}
-                  >
-                    {item.title}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      color: "#99afde",
-                      marginTop: "1%",
-                    }}
-                  >
-                    {item.description}
-                  </Typography>
-                </Box>
-              </Box>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
-      </Dialog>
-
             </div>
             <div>
               <Box>
@@ -241,63 +183,6 @@ export default function Slide() {
                   </Button>
                 </Box>
               </Box>
-              <Button variant="contained" onClick={handleClickOpen} sx={{marginLeft:'auto' , marginRight:'auto' ,display:'block' , marginTop:'2%'}}>
-        Slide in alert dialog
-      </Button>
-      <Dialog
-        open={open}
-        keepMounted
-        onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description"
-      >
-      
-        <DialogContent>
-        <Box  sx={{ width: { xs: "95%", md: "80%" }}}>
-                <Box
-                  sx={{       
-                    display: "flex",       
-                  }}
-                >
-                  {Swipe_icons.map((item) => (
-                    <Box sx={{marginLeft:'15%'}}>
-                      <img
-                      src={item.icon}
-                      style={{
-                        width: "90%",
-                        margin: "20%",
-                        borderRadius: "100px",
-                      }}
-                    />
-                     </Box>
-                  ))}
-                </Box>
-                <Box>
-                  <Typography
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      color: "#99afde",
-                    }}
-                  >
-                    {item.title}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      color: "#99afde",
-                      marginTop: "1%",
-                    }}
-                  >
-                    {item.description}
-                  </Typography>
-                </Box>
-              </Box>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
-      </Dialog>
             </div>
             <div>
               <Box>
@@ -358,67 +243,152 @@ export default function Slide() {
                   </Button>
                 </Box>
               </Box>
-              <Button variant="contained" onClick={handleClickOpen} sx={{marginLeft:'auto' , marginRight:'auto' ,display:'block' , marginTop:'2%'}}>
-        Slide in alert dialog
-      </Button>
-      <Dialog
-        open={open}
-        keepMounted
-        onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description"
-      >
-      
-        <DialogContent>
-        <Box  sx={{ width: { xs: "95%", md: "80%" }}}>
-                <Box
-                  sx={{       
-                    display: "flex",       
-                  }}
-                >
-                  {Swipe_icons.map((item) => (
-                    <Box sx={{marginLeft:'15%'}}>
-                      <img
-                      src={item.icon}
-                      style={{
-                        width: "90%",
-                        margin: "20%",
-                        borderRadius: "100px",
-                      }}
-                    />
-                     </Box>
-                  ))}
-                </Box>
-                <Box>
-                  <Typography
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      color: "#99afde",
-                    }}
-                  >
-                    {item.title}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      color: "#99afde",
-                      marginTop: "1%",
-                    }}
-                  >
-                    {item.description}
-                  </Typography>
-                </Box>
-              </Box>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
-      </Dialog>
             </div>
           </Slider>
         ))}
       </Container>
+      <Button variant="contained" onClick={handleClickOpen} sx={{marginLeft:'auto' , marginRight:'auto' ,display:'block' , marginTop:'7%'}}>
+        Open alert dialog
+      </Button>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+      >  
+        <DialogContent>
+        {Swipe.map((item) => (
+          <Slider {...settings} style={{width:'96%' , marginLeft:'auto' , marginRight:'auto'}}>
+            <div>
+              <Box>
+                <Box
+                  sx={{display:'flex' , justifyContent:'center' , marginTop:'5%' , width:'20%' , marginLeft:'auto' , marginRight:'auto'}}
+                >
+                 
+                  {Swipe_icons.map((item) => (      
+                    <img
+                      src={item.icon}
+                      style={{
+                        width: "60%",
+                        margin: "10%",
+                        borderRadius: "100px",
+                      }}    />    
+                      
+                      ))}
+                    
+                </Box>
+                <Box>
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "#99afde",
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "#99afde",
+                      marginTop: "1%",
+                    }}
+                  >
+                    {item.description}
+                  </Typography>
+                </Box>
+              </Box>
+            </div>
+            <div>
+              <Box>
+              <Box
+                  sx={{display:'flex' , justifyContent:'center' , marginTop:'5%' , width:'20%' , marginLeft:'auto' , marginRight:'auto'}}
+                >
+                 
+                  {Swipe_icons.map((item) => (      
+                    <img
+                      src={item.icon}
+                      style={{
+                        width: "60%",
+                        margin: "10%",
+                        borderRadius: "100px",
+                      }}    />    
+                      
+                      ))}
+                    
+                </Box>
+                <Box>
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "#99afde",
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "#99afde",
+                      marginTop: "1%",
+                    }}
+                  >
+                    {item.description}
+                  </Typography>
+                 
+                </Box>
+              </Box>
+            </div>
+            <div>
+              <Box>
+              <Box
+                  sx={{display:'flex' , justifyContent:'center' , marginTop:'5%' , width:'20%' , marginLeft:'auto' , marginRight:'auto'}}
+                >
+                 
+                  {Swipe_icons.map((item) => (      
+                    <img
+                      src={item.icon}
+                      style={{
+                        width: "60%",
+                        margin: "10%",
+                        borderRadius: "100px",
+                      }}    />    
+                      
+                      ))}
+                    
+                </Box>
+                <Box>
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "#99afde",
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "#99afde",
+                      marginTop: "1%",
+                    }}
+                  >
+                    {item.description}
+                  </Typography>
+                  
+                </Box>
+              </Box>
+            </div>
+          </Slider>
+        ))}
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Close</Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 }
