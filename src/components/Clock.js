@@ -10,7 +10,6 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from '@mui/material/DialogTitle';
 
 
 
@@ -60,7 +59,6 @@ export default function Clock() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Use Google's location service?"}</DialogTitle>
         <DialogContent>
         {Clocks.map((item) => (         
                                 <Card sx={{width:'100%' , marginTop:'2%'}}>
