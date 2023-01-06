@@ -248,15 +248,15 @@ export default function Slide() {
         ))}
       </Container>
       <Button variant="contained" onClick={handleClickOpen} sx={{marginLeft:'auto' , marginRight:'auto' ,display:'block' , marginTop:'7%'}}>
-        Open alert dialog
+        Popup
       </Button>
       <Dialog
         open={open}
         onClose={handleClose}
       >  
-        <DialogContent>
+        <DialogContent sx={{overflow:'hidden'}}>
         {Swipe.map((item) => (
-          <Slider {...settings} style={{width:'96%' , marginLeft:'auto' , marginRight:'auto'}}>
+          <Slider {...settings} style={{width:'95%' , marginLeft:'auto' , marginRight:'auto' }}>
             <div>
               <Box>
                 <Box
@@ -273,7 +273,7 @@ export default function Slide() {
                       }}    />    
                       
                       ))}
-                    
+
                 </Box>
                 <Box>
                   <Typography
@@ -386,7 +386,7 @@ export default function Slide() {
         ))}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
+          <Button onClick={handleClose} sx={{marginTop:'-75%'}}>Close</Button>
         </DialogActions>
       </Dialog>
     </Box>
